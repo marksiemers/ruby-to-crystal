@@ -21,7 +21,7 @@ ruby leap_year.rb
 ```
 4. Run the crystal example
 ```
-crystal eval 'require "./leap_year"'
+crystal leap_year.cr
 ```
 5. Run the ruby benchmark
 ```
@@ -42,7 +42,7 @@ If you want to add an example, create a folder that contains these files at a mi
 - `{example}_bench.cr`
 - `{example}_bench.rb`
 
-Additionally, it may be helpful to provide an `{example}.sh` that will execute the example in both language and report the benchmark results.
+Additionally, it may be helpful to provide an `{example}.sh` that will execute the example in both languages and report the benchmark results.
 
 ## Contributing
 

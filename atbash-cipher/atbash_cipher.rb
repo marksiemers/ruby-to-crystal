@@ -7,7 +7,7 @@ module Atbash
   end
 
   def self.encode_char(char)
-    PLAIN.include?(char) ? CIPHER.at(PLAIN.index(char) || 0) : char
+    CIPHER.at(PLAIN.index(char)) || char
   end
 
   def self.format(message)
@@ -26,3 +26,6 @@ end
 
 puts %(Atbash.encode("no") # => #{Atbash.encode("no")})
 puts %(Atbash.encode("yes") # => #{Atbash.encode("yes")})
+puts %(Atbash.encode("mindblowingly") # => #{Atbash.encode("mindblowingly")})
+puts %(Atbash.encode("Testing, 1 2 3, testing.") # => #{Atbash.encode("Testing, 1 2 3, testing.")})
+puts %(Atbash.encode("The quick brown fox jumps over the lazy dog.") # => #{Atbash.encode("The quick brown fox jumps over the lazy dog.")})

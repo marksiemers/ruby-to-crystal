@@ -10,29 +10,29 @@ git clone git@github.com:marksiemers/ruby-to-crystal.git
 # OR
 git clone https://github.com/marksiemers/ruby-to-crystal.git
 ```
-1. Choose an example and cd into that directory
+2. Choose an example and cd into that directory
 ```
 # for leap-year
 cd leap-year
 ```
-1. Run the ruby example
+3. Run the ruby example
 ```
 ruby leap_year.rb
 ```
-1. Run the crystal example
+4. Run the crystal example
 ```
-crystal eval 'require "./leap_year"'
+crystal leap_year.cr
 ```
-1. Run the ruby benchmark
+5. Run the ruby benchmark
 ```
 ruby leap_year_bench.rb
 ```
-1. Compile and run the crystal benchmark
+6. Compile and run the crystal benchmark
 ```
 crystal build --release leap_year_bench.cr -o leap_year_bench.out
 ./leap_year_bench.out
 ```
-1. Pledge your undying allegiance to crystal
+7. Pledge your undying allegiance to crystal
 
 ## Development
 
@@ -42,7 +42,7 @@ If you want to add an example, create a folder that contains these files at a mi
 - `{example}_bench.cr`
 - `{example}_bench.rb`
 
-Additionally, it may be helpful to provide an `{example}.sh` that will execute the example in both language and report the benchmark results.
+Additionally, it may be helpful to provide an `{example}.sh` that will execute the example in both languages and report the benchmark results.
 
 ## Contributing
 

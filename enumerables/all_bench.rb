@@ -1,4 +1,4 @@
-require "benchmark"
+require "./requirements"
 
 a_million_numbers_range = (1..1_000_000)
 b_million_numbers_range = (-1_000_000..1)

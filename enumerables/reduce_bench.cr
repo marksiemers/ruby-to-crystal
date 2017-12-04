@@ -1,4 +1,4 @@
-require "benchmark"
+require "./requirements"
 
 a_million_numbers_range = (1_u64..1_000_000_u64)
 a_million_numbers_array = (1_u64..1_000_000_u64).to_a
@@ -8,7 +8,7 @@ pp a_million_numbers_range.reduce{|sum,num| sum + num }
 pp a_million_numbers_array.reduce{|sum,num| sum + num }
 pp random_numbers_array.reduce{|sum,num| sum + num }
 
-n = 1_000
+n = 100
 Benchmark.bm do |x|
   x.report { n.times { a_million_numbers_range.reduce{|sum,num| sum + num } } }
   x.report { n.times { a_million_numbers_array.reduce{|sum,num| sum + num } } }

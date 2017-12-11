@@ -5,7 +5,11 @@ module Definite
   end
 
   def a_or_an(thing)
-    "aeiou".includes? thing.chars.first.downcase
+    if "aeiou".includes? thing.chars.first.downcase
+      "an"
+    else
+      "a"
+    end
   end
 
 end
@@ -30,7 +34,7 @@ module Type
   # Type.what_is_this([] of String) # => "This is definitely an Array(String)"
   # ```
   def what_is_this(thing : Array(String))
-    "This is definitely an Array(String)"
+    message("Array(String)")
   end
 
   # Returns a `String` indicating that *thing* is definitely an Array
@@ -39,7 +43,7 @@ module Type
   # Type.what_is_this([] of Int32) # => "This is definitely an Array"
   # ```
   def what_is_this(thing : Array)
-    "This is definitely an Array"
+    message("Array")
   end
 
   # Returns a `String` indicating that *thing* is definitely a String
@@ -48,7 +52,7 @@ module Type
   # Type.what_is_this("A string") # => "This is definitely a String"
   # ```
   def what_is_this(thing : String)
-    "This is definitely a String"
+    message("String")
   end
 
   # Returns a `String` indicating that *thing* is definitely a Hash(String,String)
@@ -56,8 +60,8 @@ module Type
   # ```
   # Type.what_is_this({} of String => String) # => "This is definitely a Hash(String,String)"
   # ```
-  def what_is_this(thing : Hash)
-    "This is definitely a Hash(String,String)"
+  def what_is_this(thing : Hash(String,String))
+    message("Hash(String,String)")
   end
 
   # Returns a `String` indicating that *thing* is definitely a Hash
@@ -66,7 +70,7 @@ module Type
   # Type.what_is_this({} of Symbol => String) # => "This is definitely a Hash of unknown types)"
   # ```
   def what_is_this(thing : Hash)
-    "This is definitely a Hash (of unknown types)"
+    message("Hash (of unknown types)")
   end
 
   # Returns a `String` indicating that *thing* is not known for sure for
@@ -75,9 +79,9 @@ module Type
   # ```
   # Type.what_is_this({"Is this a tuple", true}) # => "I don't know for sure what this is"
   # ```
-  # def what_is_this(thing)
-  #   "I don't know for sure what this is"
-  # end
+  def what_is_this(thing)
+    "I don't know for sure what this is"
+  end
 end
 
 pp Type.what_is_this(1)
@@ -86,4 +90,4 @@ pp Type.what_is_this([] of String)
 pp Type.what_is_this("")
 pp Type.what_is_this({} of String => String)
 pp Type.what_is_this({} of Symbol => String)
-# pp Type.what_is_this({"Is this a tuple", true})
+pp Type.what_is_this({"Is this a tuple", true})

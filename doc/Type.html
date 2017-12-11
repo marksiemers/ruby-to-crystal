@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/marksiemers/ruby-to-crystal">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/doc.js"></script>
+  <title>Type - github.com/marksiemers/ruby-to-crystal</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class=" " data-id="github.com/marksiemers/ruby-to-crystal/Atbash" data-name="atbash">
+      <a href="Atbash.html">Atbash</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/marksiemers/ruby-to-crystal/Definite" data-name="definite">
+      <a href="Definite.html">Definite</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/marksiemers/ruby-to-crystal/Hamming" data-name="hamming">
+      <a href="Hamming.html">Hamming</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/marksiemers/ruby-to-crystal/Type" data-name="type">
+      <a href="Type.html">Type</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/marksiemers/ruby-to-crystal/Year" data-name="year">
+      <a href="Year.html">Year</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Type
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A Type is a module that reports what type a variable definitely is.</p>
+
+
+
+
+
+
+
+  <h2>Extended Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="Definite.html">Definite</a></li>
+  
+    <li class="other-type"><a href="Type.html">Type</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal.cr#L1" target="_blank">method-overloading/crystal.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L18" target="_blank">method-overloading/crystal_with_doc.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AInt%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : Int)</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Integer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AArray%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : Array)</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Array</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AString%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : String)</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a String</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AHash%28String%2CString%29%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : Hash(String, String))</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a Hash(String,String)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AHash%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : Hash)</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a Hash</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%3AArray%28String%29%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing : Array(String))</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Array(String)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what_is_this%28thing%29-instance-method" class="signature"><strong>#what_is_this</strong>(thing)</a>
+        
+          <div class="summary"><p>Returns a <code>String</code> indicating that <em>thing</em> is not known for sure for unsupported types</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:Int&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : Int)
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AInt%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Integer</p>
+
+<pre><code><span class="t">Type</span>.what_is_this(<span class="n">1</span>) <span class="c"># &#61;&gt; &quot;This is definitely an Integer&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L27" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:Array&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : Array)
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AArray%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Array</p>
+
+<pre><code><span class="t">Type</span>.what_is_this(<span class="o">[]</span> <span class="k">of</span> <span class="t">Int32</span>) <span class="c"># &#61;&gt; &quot;This is definitely an Array&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L45" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : String)
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AString%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a String</p>
+
+<pre><code><span class="t">Type</span>.what_is_this(<span class="s">&quot;A string&quot;</span>) <span class="c"># &#61;&gt; &quot;This is definitely a String&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L54" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:Hash&#40;String,String&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : Hash(String, String))
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AHash%28String%2CString%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a Hash(String,String)</p>
+
+<pre><code><span class="t">Type</span>.what_is_this({} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>) <span class="c"># &#61;&gt; &quot;This is definitely a Hash&#40;String,String&#41;&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L63" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:Hash&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : Hash)
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AHash%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely a Hash</p>
+
+<pre><code><span class="t">Type</span>.what_is_this({} <span class="k">of</span> <span class="t">Symbol</span> => <span class="t">String</span>) <span class="c"># &#61;&gt; &quot;This is definitely a Hash of unknown types&#41;&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing:Array&#40;String&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing : Array(String))
+
+        <a class="method-permalink" href="#what_is_this%28thing%3AArray%28String%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is definitely an Array(String)</p>
+
+<pre><code><span class="t">Type</span>.what_is_this(<span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>) <span class="c"># &#61;&gt; &quot;This is definitely an Array&#40;String&#41;&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what_is_this&#40;thing&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>what_is_this</strong>(thing)
+
+        <a class="method-permalink" href="#what_is_this%28thing%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a <code>String</code> indicating that <em>thing</em> is not known for sure for
+unsupported types</p>
+
+<pre><code><span class="t">Type</span>.what_is_this({<span class="s">&quot;Is this a tuple&quot;</span>, <span class="n">true</span>}) <span class="c"># &#61;&gt; &quot;I don&#39;t know for sure what this is&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/marksiemers/ruby-to-crystal/blob/414cdf9339e9c92247d0c0b73827b041d297d717/src/method-overloading/crystal_with_doc.cr#L82" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

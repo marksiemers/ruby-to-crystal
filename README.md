@@ -29,8 +29,7 @@ ruby leap_year_bench.rb
 ```
 6. Compile and run the crystal benchmark
 ```
-crystal build --release leap_year_bench.cr -o leap_year_bench.out
-./leap_year_bench.out
+crystal leap_year_bench.cr --release
 ```
 7. Pledge your undying allegiance to crystal
 

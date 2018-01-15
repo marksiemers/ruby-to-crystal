@@ -13,7 +13,7 @@ git clone https://github.com/marksiemers/ruby-to-crystal.git
 2. Choose an example and cd into that directory
 ```
 # for leap-year
-cd leap-year
+cd src/leap-year
 ```
 3. Run the ruby example
 ```

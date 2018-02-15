@@ -2,6 +2,15 @@
 
 Examples of ruby code converted to crystal and benchmarks to show the speed increase with compiled crystal code.
 
+## Dependencies
+
+Both Ruby and Crystal need to be installed on your system. If they aren't already, follow the [installation guide for Ruby](https://www.ruby-lang.org/en/downloads/) and the [installation guide for Crystal](https://crystal-lang.org/docs/installation/)
+
+If you already have Ruby and you are using Mac OS X with homebrew, install Crystal using:
+```shell
+brew install crystal-lang
+```
+
 ## Installation & Usage
 
 1. Clone the repo

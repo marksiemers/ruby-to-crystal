@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.7.1'
 
 gem 'benchmark-ips'

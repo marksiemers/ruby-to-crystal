@@ -16,7 +16,7 @@ Benchmark.bm do |x|
 end
 
 Benchmark.ips do |x|
-  x.report("a_million_numbers_range.reduce") { a_million_numbers_range.select{|num| num.even? } }
-  x.report("a_million_numbers_array.reduce") { a_million_numbers_array.select{|num| num.even? } }
-  x.report("random_numbers_array.reduce") { random_numbers_array.select{|num| num.even? } }
+  x.report("a_million_numbers_range.select") { a_million_numbers_range.select{|num| num.even? } }
+  x.report("a_million_numbers_array.select") { a_million_numbers_array.select{|num| num.even? } }
+  x.report("random_numbers_array.select") { random_numbers_array.select{|num| num.even? } }
 end

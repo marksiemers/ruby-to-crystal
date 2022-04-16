@@ -1,6 +1,6 @@
 require "benchmark"
 require "benchmark/ips"
-require "./hamming"
+require_relative "./hamming"
 
 n = 1_000_000
 Benchmark.bm do |x|
